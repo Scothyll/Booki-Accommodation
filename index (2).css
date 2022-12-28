@@ -25,7 +25,7 @@
 }
 
 #accomodation {
-  background-color: lightgrey;
+  background-color: rgba(236, 227, 227, 0.959);
   padding: 30px;
 }
 #accomodation .accomodations-items {
@@ -63,4 +63,4 @@
 }
 #accomodation .accomodations-items .acc-item .details p {
   margin: 0;
-}/*# sourceMappingURL=index (2).css.map */
+}
