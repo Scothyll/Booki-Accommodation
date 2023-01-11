@@ -1,458 +1,493 @@
 .header {
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  .header .logo-cont .logo img {
-    height: 60px;
-  }
-  .header .header-right ul {
-    display: flex;
-    gap: 5px;
-    margin: 0;
-  }
-  .header .header-right ul li {
-    cursor: pointer;
-    list-style: none;
-    border-top: 2px blue solid;
-  }
-  .header .header-right ul li a {
-    color: blue;
-  }
-  .header .header-right ul li a:hover {
-    color: rgba(0, 0, 255, 0.712);
-  }
-  
-  #accomodation {
-    background-color: rgba(236, 227, 227, 0.959);
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.header .logo-cont .logo img {
+  height: 60px;
+  padding-left: 40px;
+}
+
+#accomodation .accomodations-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#accomodation .accomodations-items .acc-item {
+  width: 100%;
+  max-width: 50%;
+  background: #fff;
+  flex: 1 0 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 30px;
+  padding: 3px;
+}
+#accomodation .accomodations-items .acc-item .image-block {
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#accomodation .accomodations-items .acc-item .image-block img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+#accomodation .accomodations-items .acc-item .details {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#accomodation .accomodations-items .acc-item .details h5 {
+  margin: 0;
+}
+#accomodation .accomodations-items .acc-item .details p {
+  margin: 0;
+}
+#accomodation {
+    background-color: #f2f2f2;
     padding: 30px;
+    border-radius: 20px;
   }
   #accomodation .accomodations-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
   }
-  #accomodation .accomodations-items .acc-item {
-    width: 100%;
-    max-width: 50%;
-    background: #fff;
-    flex: 1 0 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    border-radius: 10px;
-    padding: 3px;
-  }
+  
   #accomodation .accomodations-items .acc-item .image-block img {
     max-width: 100%;
     height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   #accomodation .accomodations-items .acc-item .details {
     padding: 5px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0px;
   }
   #accomodation .accomodations-items .acc-item .details h5 {
     margin: 0;
   }
   #accomodation .accomodations-items .acc-item .details p {
     margin: 0;
-  }
+  } /*# sourceMappingURL=index (2).css.map */
   
-  .header {
-    background: #fff;
+  .container {
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  .header .logo-cont .logo img {
-    height: 60px;
-  }
-  .header .header-right ul {
-    display: flex;
-    gap: 5px;
-    margin: 0;
-  }
-  .header .header-right ul li {
-    cursor: pointer;
-    list-style: none;
-    border-top: 2px blue solid;
-  }
-  .header .header-right ul li a {
-    color: blue;
-  }
-  .header .header-right ul li a:hover {
-    color: rgba(0, 0, 255, 0.712);
-  }
-  
-  #accomodation {
-    background-color: rgba(236, 227, 227, 0.959);
-    padding: 30px;
-  }
-  #accomodation .accomodations-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  #accomodation .accomodations-items .acc-item {
-    width: 100%;
-    max-width: 50%;
-    background: #fff;
-    flex: 1 0 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    border-radius: 10px;
-    padding: 3px;
-  }
-  #accomodation .accomodations-items .acc-item .image-block img {
-    max-width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
-  }
-  #accomodation .accomodations-items .acc-item .details {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  #accomodation .accomodations-items .acc-item .details h5 {
-    margin: 0;
-  }
-  #accomodation .accomodations-items .acc-item .details p {
-    margin: 0;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
-  body{
-      padding: 0;
-      margin: 0;
-      font-family: 'Raleway', sans-serif;
-  
-  }
-  /* Style the header  */
-  .header {
-      overflow: hidden;
-      background-color: #ffffff;
-      /* padding: 20px 10px; */
-  }
-  
-  
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
-      .header a {
-          float: none;
-          display: block;
-          text-align: left;
-      }
-  
-      .header-right {
-          float: none;
-      
-      }
-  }
-  
-  #welcome {
-      padding: 5px 30px 5px 30px;
-      text-align: right;
-  
-  }
-  
-  .head {
-      height: 37px;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgb(37, 121, 199);
-  }
-  
-  li {
-      float: left;
-      display: inline;
-      font-weight: 1000;
-  }
-  
-  li a {
-      display: block;
-      color: rgb(255, 255, 255);
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-  
-  p.groove {
-      border-style: groove;
-  }
-  
-  h1 {
-      color: #0e0d0d;
-      font-size: 100%;
-  }
-  
-  h2 {
-  
-      color: #000;
-      font-size: 80%;
-      font-weight: 100;
-  }
-  
-  h3 {
-  
-      color: #000;
-      font-size: 85%;
-  }
-  
-  
-  h5 {
-  
-      color: #000;
-      font-size: 120%;
-  }
-  
-  p {
-      color: #000;
-      font-size: smaller;
-  
-  }
-  /* Style the second to the last section having Most popular*/
-  #popular {
-      background-color: rgb(238, 232, 232);
-      padding: 30px;
-      border-radius: 20px;
-    }
-    #popular .popular-items {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      flex-direction: row;
-      
-    }
-    #popular .popular-items .popular-acc-item {
-      width: 100%;
-      max-width: 100%;
-      max-height: 30%;
-      background: #fff;
-      display: flex;
-      flex-direction: row;
-      gap: 5px;
-      border-radius: 10px;
-      padding: 3px;
-      
-    }
-    #popular .popular-items .popular-acc-item .popular-image-block img {
-      max-width: 90%;
-      height: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      object-fit: cover;
-    }
-    #popular .popular-items .popular-acc-item .popular-details {
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    #popular .popular-items .popular-acc-item .popular-details h5 {
-      margin: 0;
-    }
-    #popular .popular-items .popular-acc-item .popular-details p {
-      margin: 0;
-    }
-  
-    footer {
-      display: flex;
-      padding: 40px;
-      padding-left: 5%;
-      background-color: rgba(206, 203, 203, 0.336);
-    }
-  
-    footer ul {
-      flex-basis: 33.3%;
-      padding: 0;
-      flex-direction: column;
-      display: flex;
-    }
-    footer ul li {
-      list-style: none;
-      font-size: 16px;
-      font-weight: 200;
-      padding: 2%;
-     
-    }
-    footer ul li.weight {
-      font-weight: 700;
-      font-style: 14px;
-      margin-bottom: 8px;
-     
-    }
-    
-    .search_section {
-      display: flex;
-      width: 350px;
-      height: 100%;
-    }
-    .search_section .location {
-      width: 50px;
-      height: 47px;
-      background-color: lightgray;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-    }
-    .search_section .location img {
-      width: auto;
-    }
-    .search_section .text_box {
-      width: 50%;
-      flex-grow: 1;
-      height: inherit;
-    }
-    .search_section .text_box input {
-      outline: none;
-      border: 0.5px lightgray solid;
-      width: 100%;
-      padding: 15px 20px;
-      display: inline-block;
-      box-sizing: border-box;
-    }
-    .search_section .search_btn {
-      width: 90px;
-    }
-    .search_section .search_btn button {
-      border: none;
-      color: rgb(45, 140, 230);
-      height: 100%;
-      width: 100%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 0;
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-      background-color: rgb(11, 120, 209);
-      color: aliceblue;
-      font-weight: 550;
-      cursor: pointer;
-    } /*# sourceMappingURL=index.css.map */
-    
-    .header {
-      background: #fff;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-    .header .logo-cont .logo img {
-      height: 60px;
-    }
-    .header .header-right ul {
-      display: flex;
-      gap: 5px;
-      margin: 0;
-    }
-    .header .header-right ul li {
-      cursor: pointer;
-      list-style: none;
-     
-    }
-    .header .header-right ul li a {
-      color: rgb(5, 5, 5);
-    }
-    .header .header-right ul li a:hover {
-      color: rgba(0, 0, 255, 0.712);
-      border-top: 2px blue solid;
-    }
-    
-    #accomodation {
-      background-color: lightgrey;
-      padding: 30px;
-      border-radius: 20px;
-    }
-    #accomodation .accomodations-items {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    #accomodation .accomodations-items .acc-item {
-      width: 30%;
-      max-width: 30%;
-      background: #fff;
-      flex: 1 0 30%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 5px;
-      border-radius: 10px;
-      padding: 3px;
-      flex-wrap: wrap;
-      
-    }
-    #accomodation .accomodations-items .acc-item .image-block img {
-      max-width: 100%;
-      height: auto;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      -o-object-fit: cover;
-      object-fit: cover;
-    }
-    #accomodation .accomodations-items .acc-item .details {
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      gap: 0px;
-    }
-    #accomodation .accomodations-items .acc-item .details h5 {
-      margin: 0;
-    }
-    #accomodation .accomodations-items .acc-item .details p {
-      margin: 0;
-    } /*# sourceMappingURL=index (2).css.map */
-    
-    .container {
-    display: flex;
-    
-    
     gap: 40px;
     padding: 5%;
-    
-    }
-    
-    
-    .paddingtop{
-    
-      padding: 3.5%;
-    }
-    
-    .checked {
-    
-      color: blue;
-    }
-    
-    .overall{
-    
-      background-color: lightgrey;
-      padding: 30px;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    #assets {
-    
-      max-width: 100%;
-      height: auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+  }
   
+  .paddingtop {
+    padding-left: 4%;
+   
+  }
+  
+  .checked {
+    color: blue;
+  }
+  
+  .overall {
+    background-color: lightgrey;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #assets {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+/* Style the header  */
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  /* padding: 20px 10px; */
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+#welcome {
+  padding: 5px 30px 5px 30px;
+  text-align: right;
+}
+
+.head {
+  height: 37px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(37, 121, 199);
+}
+
+li {
+  /* float: left; */
+  display: inline;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+p.groove {
+  border-style: groove;
+}
+
+h1 {
+  color: #0e0d0d;
+  font-size: 100%;
+}
+
+h2 {
+  color: #000;
+  font-size: 80%;
+  font-weight: 100;
+}
+
+h3 {
+  color: #000;
+  font-size: 85%;
+}
+
+h5 {
+  color: #000;
+  font-size: 120%;
+}
+
+p {
+  color: #000;
+  font-size: smaller;
+}
+/* Style the second to the last section having Most popular*/
+#popular {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#popular .popular-items {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+#popular .popular-items .popular-acc-item {
+  width: 100%;
+  min-width: 320px;
+  /* max-height: 35%; */
+  height: 110px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 3px;
+}
+#popular .popular-items .popular-acc-item .popular-image-block {
+  background-size: cover;
+  background-position: center;
+  height: inherit;
+  width: 100px;
+}
+#popular .popular-items .popular-acc-item .popular-image-block img {
+  max-width: 90%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+#popular .popular-items .popular-acc-item .popular-details {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#popular .popular-items .popular-acc-item .popular-details h5 {
+  margin: 0;
+}
+#popular .popular-items .popular-acc-item .popular-details p {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  padding: 40px;
+  padding-left: 5%;
+  background-color: rgba(206, 203, 203, 0.336);
+}
+
+footer ul {
+  flex-basis: 33.3%;
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+}
+footer ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 2%;
+}
+footer ul li.weight {
+  font-weight: 700;
+  font-style: 14px;
+  margin-bottom: 8px;
+}
+
+.search_section {
+  display: flex;
+  width: 350px;
+  height: 100%;
+}
+.search_section .location {
+  width: 50px;
+  height: 47px;
+  background-color: #f2f2f2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.search_section .location img {
+  width: auto;
+}
+.search_section .text_box {
+  width: 50%;
+  flex-grow: 1;
+  height: inherit;
+}
+.search_section .text_box input {
+  outline: none;
+  border: 0.5px lightgray solid;
+  width: 100%;
+  padding: 15px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.search_section .search_btn {
+  width: 90px;
+}
+.search_section .search_btn button {
+  border: none;
+  color: rgb(45, 140, 230);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(11, 120, 209);
+  color: aliceblue;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.header .header-right ul {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+}
+.header .header-right ul li {
+  cursor: pointer;
+  list-style: none;
+}
+.header .header-right ul li a {
+  color: rgb(5, 5, 5);
+  border-top: 2px solid;
+  border-top-color: transparent;
+}
+.header .header-right ul li a:hover {
+  color: rgba(0, 0, 255, 0.712);
+  border-top-color: blue;
+}
+
+
+  
+
+
+.filter{
+
+    display: flex;
+    gap: 20px;
+    padding-left: 60px;
+}
+.Filter-para{
+
+    font-weight: 600;
+    font-size: large;
+}
+
+
+    .btn-ctn {
+        background: white;
+        display: flex;
+        gap: 10px;
+        height: 50px;
+        border-radius: 30px;
+        width: fit-content;
+        padding-right: 10px;
+        border: 1px solid hsl(216deg 100% 94%);
+        overflow: hidden;
+        font-weight: 600;
+   }
+    .btn-ctn .img-ctn {
+        width: 50px;
+        height: 50px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background: hsl(216deg 100% 94%);;
+            justify-content: center;
+        align-items: center;
+        align-self: center;
+   }
+    .btn-ctn .text-ctn {
+        align-self: center;
+   }
+    
+   .icon{
+
+    padding-left: 30%;
+    padding-top: 40%;
+    display: flex;
+    color: blue;
+   }
+   .activities-container{
+
+    display: flex;
+   }
+.container2{
+
+    display: flex;
+    gap: 0px;
+    padding: 5%;
+}
+
+   .activity{
+        display: flex;
+        gap: 0px;
+        padding: 5%;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        background-image: url('/assets/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+        background-size: cover;
+       
+
+            
+      }
+      .activity-clone{
+        display: flex;
+        gap: 0px;
+        padding: 5%;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        background-image: url('/assets/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+        background-size: cover;
+       
+            border-radius: 5%;;
+            
+      }
+      .activity1{
+        display: flex;
+    flex-direction: column;
+        gap: 0px;
+        padding: 5%;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: fit-content;
+        
+        
+      }
+      .nested-container1{
+
+        display: flex;
+        background-color: aqua;
+        height: 100px;
+        gap: 0px;
+        max-width: 100%;
+        max-height: 200%;
+        overflow: hidden;
+        
+            
+          
+        
+
+      }
+      .nested-container2{
+
+        display: flex;
+        background-color: aqua;
+        height: 100px;
+        gap: 0px;
+        max-width: 100%;
+        max-height: 200%;
+        overflow: hidden;
+        border-radius: 10%;
+
+        
+      }
+      img{
+
+        width: 100%;
+        height: 200%;
+        object-fit: cover;
+        flex-wrap: wrap;
+       
+        
+      }
+      .act-details{
+
+        background-color: white;
+    
+    padding: 5px;
+    display: flex;
+    gap: 4px;
+      }
+      .container-segment{
+        display: flex;
+        flex-direction: column;
+      }
+    
