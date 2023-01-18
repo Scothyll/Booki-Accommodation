@@ -9,7 +9,7 @@
 }
 .header .logo-cont .logo img {
   height: 60px;
-  padding-left: 40px;
+  padding-left: 70px;
 }
 .header .header-right ul {
   display: flex;
@@ -29,21 +29,35 @@
   color: rgba(0, 0, 255, 0.712);
   border-top-color: blue;
 }
+.minititle {
+  display: flex;
+  padding-left: 90px;
+  padding-top: 20px;
+}
+.fa-star {
+  color: rgba(149, 145, 145, 0.73);
+}
+
 .accomodation-group {
   display: flex;
   gap: 40px;
   padding: 5%;
   flex-direction: row;
+  padding-top: 20px;
+  
 }
 .accomodation-group #accomodation {
   background-color: #f2f2f2;
   padding: 30px;
   border-radius: 20px;
+  
+  
 }
 .accomodation-group #accomodation .accomodations-items {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  
 }
 .accomodation-group #accomodation .accomodations-items .acc-item {
   width: 100%;
@@ -53,13 +67,24 @@
   flex-direction: column;
   gap: 5px;
   border-radius: 30px;
-  padding: 3px;
+  background-size: cover;
+  background-position: center;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 1px rgba(233, 230, 230, 0.2);
+    border: 5px solid rgb(255, 255, 255);
+    
+   
+ 
+    
 }
 .accomodation-group #accomodation .accomodations-items .acc-item .image-block {
   height: 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+  
+  
 }
 .accomodation-group
   #accomodation
@@ -71,18 +96,25 @@
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  object-fit: cover;
+  object-fit: none;
 }
 .accomodation-group #accomodation .accomodations-items .acc-item .details {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+padding-left: 15px;
+padding-bottom: 15px;
   gap: 0px;
 }
 .accomodation-group #accomodation .accomodations-items .acc-item .details h5,
 .accomodation-group #accomodation .accomodations-items .acc-item .details p {
   margin: 0;
+}
+.showmore{
+  padding-top: 20px;
+  padding-left: 10px;
+  font-weight: 800;
+  font-size: medium;
 }
 @media only screen and (max-width: 1200px) {
   .accomodation-group {
@@ -95,7 +127,7 @@
   }
 }
 .paddingtop {
-  padding-left: 4%;
+  padding-left: 90px;
 }
 .checked {
   color: blue;
@@ -189,7 +221,9 @@ p {
   flex-direction: row;
   gap: 5px;
   border-radius: 10px;
-  padding: 3px;
+  overflow: hidden;
+  background-size: cover;
+  border: 5px solid rgb(255, 255, 255);
 }
 #popular .popular-items .popular-acc-item .popular-image-block {
   background-size: cover;
@@ -292,7 +326,7 @@ footer ul li.weight {
 .filter {
   display: flex;
   gap: 20px;
-  padding-left: 60px;
+  padding-left: 90px;
   flex-wrap: wrap;
 }
 .Filter-para {
@@ -326,26 +360,31 @@ footer ul li.weight {
   align-self: center;
 }
 .activities-container-main {
-  padding: 5%;
+ padding-left: 90px;
+ padding-bottom: 60px;
+  
 }
 .activities-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 35px;
 }
 .activities-container .activity-group {
   display: flex;
   flex-direction: row;
   flex: 1;
   padding: 20px 0;
-  gap: 10px;
+  gap: 35px;
+
 }
 .activities-container .activity-group .activitiesR {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  flex: 1 0 45%;
-  height: 700px;
+  gap: 45px;
+  flex: 1 0 40%;
+  height: 500px;
+  padding-right: 20px;
+  
 }
 .activities-container .activity-group .activitiesR .activityR {
   display: flex;
@@ -354,12 +393,13 @@ footer ul li.weight {
   background-color: #f2f2f2;
   background-size: cover;
   border-radius: 15px;
-  height: 48%;
-  flex: 1 0 48%;
+  height: 48px;
+  flex: 1 0 35%;
   justify-content: end;
   overflow: hidden;
   background-position: center;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  gap: 10px;
 }
 .activities-container .activity-group .activitiesR .activityR.one {
   background-image: url("/assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
@@ -369,6 +409,7 @@ footer ul li.weight {
 }
 .activities-container .activity-group .activitiesR .activityR.three {
   background-image: url("/assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+flex-grow: 0;
 }
 .activities-container .activity-group .activitiesR .activityR.four {
   background-image: url("/assets/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
@@ -396,13 +437,13 @@ footer ul li.weight {
   margin: 0;
   padding: 0;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .activities-container {
     gap: 10px;
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .activities-container .activity-group {
     flex-direction: column;
   }
@@ -419,4 +460,19 @@ footer ul li.weight {
   .header-right {
     float: none;
   }
+}
+
+.cust-btn-ctn {
+  background: #fff;
+  display: flex;
+  gap: 10px;
+  height: 25px;
+  border-radius: 30px;
+  width: fit-content;
+  padding-right: 10px;
+  border: 1px solid #e0edff;
+  overflow: hidden;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-left: 5px;
 }
