@@ -116,12 +116,12 @@ padding-bottom: 15px;
   font-weight: 800;
   font-size: medium;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .accomodation-group {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .accomodation-group #accomodation .accomodations-items .acc-item {
     flex: 1 0 100%;
   }
@@ -461,6 +461,12 @@ flex-grow: 0;
     float: none;
   }
 }
+@media (min-width: 762px) and (max-width: 992px) {
+  /* CSS styles for screens within the range of 762px to 992px */
+  }
+  @media (max-width: 768px) {
+    /* CSS styles for screens below 768 pixels */
+    }
 
 .cust-btn-ctn {
   background: #fff;
