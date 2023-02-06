@@ -32,6 +32,7 @@ body {
     max-width: 1390px;
   }
 }
+/* These set of codes were used in styling the header  including the logo  and header attributes*/
 .main-header {
   display: flex;
   flex-direction: column;
@@ -78,6 +79,7 @@ body {
   border-top-color: rgba(0, 0, 0, 0);
   text-decoration: none;
 }
+/* These set of codes were used in styling the Section containing the Title, search bar and buttons*/
 .hero-section {
   padding-top: 40px;
   display: flex;
@@ -225,6 +227,7 @@ body {
   font-size: 12px;
   color: blue;
 }
+/* These set of codes were used in styling the  accommodation section including the cards and attrbutes*/
 .accomodation-section {
   margin-top: 50px;
   display: flex;
@@ -310,6 +313,7 @@ body {
 .accomodation-section__accomodations__items .acc-item .details p {
   margin: 0;
 }
+/* These set of codes were used in styling the popular container found in the accommodation section*/
 .accomodation-section__most-popular {
   flex: 0 1 30%;
 }
@@ -360,6 +364,8 @@ body {
   p {
   margin: 0;
 }
+
+/* These set of codes were used in styling the activities session and detailsr*/
 .activitites-section {
   margin-top: 50px;
   display: flex;
@@ -415,6 +421,7 @@ body {
   margin: 0;
   font-size: 20px;
 }
+/* These set of codes were used in styling the footer section*/
 footer {
   background-color: rgba(206, 203, 203, 0.336);
 }
@@ -442,6 +449,8 @@ footer .footer ul li.weight {
   font-weight: 700;
   padding: 15px;
 }
+
+/* These set of codes were used in styling the tablet and  mobile layout*/
 @media screen and (min-width: 768px) {
   .main-header {
     padding: 0 0 10px;
@@ -553,6 +562,7 @@ footer .footer ul li.weight {
     height: 490px;
   }
 }
+/* These set of codes were used in styling the mobile layout*/
 @media screen and (max-width: 768px) {
   .hero-section__search-bar {
     display: flex;
