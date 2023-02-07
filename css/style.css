@@ -569,3 +569,6 @@ footer .footer ul li.weight {
     max-width: 790px;
   }
 }
+.activitites-section__activities .activity-container__activity-group__item.pom {
+      flex: 1 0 60%;
+}
